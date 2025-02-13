@@ -13,7 +13,7 @@ length = input("the length of the password you want: ")
 def makeingRandomPassword(length):
     random_chars = ''.join(random.choices(
         string.ascii_letters+string.digits, k=int(length)))
-    print(random_chars, len(random_chars))
+    print(f"The password is {random_chars}")
 
 
 def check(string):
